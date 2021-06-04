@@ -1,3 +1,11 @@
+<<<<<<< HEAD
 node_modules
 temp
 .vscode
+=======
+__pycache__/
+*.pyc
+waveflag
+build/
+venv/
+>>>>>>> 948b1a7f1ed4ec7e27930ad8e027a740db3fe25e

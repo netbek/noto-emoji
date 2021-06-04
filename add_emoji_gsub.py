@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # Copyright 2014 Google Inc. All rights reserved.
 #
@@ -18,13 +18,11 @@
 
 __author__ = "roozbeh@google.com (Roozbeh Pournader)"
 
-
 import sys
 
 from fontTools import agl
-from fontTools import ttLib
 from fontTools.ttLib.tables import otTables
-
+from fontTools import ttLib
 from nototools import font_data
 
 
