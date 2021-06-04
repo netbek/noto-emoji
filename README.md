@@ -2,25 +2,41 @@
 # Noto Emoji
 Color and Black-and-White Noto emoji fonts, and tools for working with them.
 
+## Prerequisites
+Building Noto Color Emoji requires:
+- Python 3
+- [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
+- [pngquant](https://pngquant.org/)
+- [zopflipng](https://github.com/google/zopfli)
+- [cairo](https://www.cairographics.org/)
+- [imagemagick](https://imagemagick.org/)
+
 ## Building NotoColorEmoji
+This project uses a virtual environment to manage dependencies. Use the following steps to get up and running:
 
-Building NotoColorEmoji currently requires a Python 2.x wide build.  To build
-the emoji font you will require a few files from nototools.  Clone a copy from
-https://github.com/googlei18n/nototools and either put it in your PYTHONPATH or
-use 'python setup.py develop' ('install' currently won't fully install all the
-data used by nototools).  You will also need fontTools, get it from
-https://github.com/behdad/fonttools.git.
+```shell
+# make sure you have the Prerequisites
 
-Then run make.  NotoColorEmoji is the default target.  It's suggested to use -j,
-especially if you are using zopflipng for compression.  Intermediate products
-(compressed image files, for example) will be put into a build subdirectory; the
-font will be at the top level.
+# create & activate a virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# install python requirements
+pip install -r requirements.txt
+
+time make -j
+```
+
+Intermediate products (compressed image files, for example) will be put into a build subdirectory. Two fonts will be saved at the top level:
+
+* `NotoColorEmoji.ttf`, for general use.
+* `NotoColorEmoji_WindowsCompatible.ttf`, which is the same font but with an additional empty `glyf` table and `cmap` format 4 subtable. This is required by Windows 10 if you want to _install_ the font.
 
 ## Using NotoColorEmoji
 
 NotoColorEmoji uses the CBDT/CBLC color font format, which is supported by Android
 and Chrome/Chromium OS.  Windows supports it starting with Windows 10 Anniversary
-Update in Chome and Edge.  On macOS, only Chrome supports it, while on Linux it will
+Update in Chrome and Edge.  On macOS, only Chrome supports it, while on Linux it will
 support it with some fontconfig tweaking, see [issue #36](https://github.com/googlei18n/noto-emoji/issues/36). Currently we do not build other color font formats.
 
 ## Color emoji assets
