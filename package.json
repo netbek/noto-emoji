@@ -27,8 +27,8 @@
   "devDependencies": {
     "bluebird": "3.7.2",
     "fs-extra": "10.0.0",
-    "globby": "11.0.3",
-    "prettier": "2.3.0",
-    "punchcutter": "1.0.31"
+    "globby": "11.0.4",
+    "prettier": "2.5.1",
+    "punchcutter": "1.0.33"
   }
 }
