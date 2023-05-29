@@ -27,7 +27,7 @@
   "devDependencies": {
     "fs-extra": "10.1.0",
     "globby": "11.1.0",
-    "prettier": "2.7.1",
-    "punchcutter": "1.0.41"
+    "prettier": "2.8.8",
+    "punchcutter": "2.0.9"
   }
 }
