@@ -1,6 +1,10 @@
 {
   "name": "@netbek/noto-emoji",
   "version": "0.0.6",
+  "engines": {
+    "node": "18.16.0",
+    "npm": "9.6.7"
+  },
   "description": "",
   "main": "index.js",
   "repository": {
@@ -28,6 +32,6 @@
     "fs-extra": "10.1.0",
     "globby": "11.1.0",
     "prettier": "2.8.8",
-    "punchcutter": "2.0.9"
+    "punchcutter": "2.0.10"
   }
 }
