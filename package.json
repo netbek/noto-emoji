@@ -1,0 +1,33 @@
+{
+  "name": "@netbek/noto-emoji",
+  "version": "0.0.7",
+  "type": "module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/netbek/noto-emoji"
+  },
+  "files": [
+    "build/",
+    "index.js"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "test": "echo test"
+  },
+  "author": {
+    "name": "Hein Bekker",
+    "email": "hein@netbek.co.za",
+    "url": "http://netbek.co.za"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/netbek/noto-emoji/issues"
+  },
+  "devDependencies": {
+    "fs-extra": "11.2.0",
+    "globby": "14.0.2",
+    "prettier": "3.4.1",
+    "punchcutter": "2.1.1"
+  }
+}

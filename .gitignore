@@ -4,3 +4,5 @@ waveflag
 build/
 venv/
 emojicompat/
+node_modules/
+temp/
