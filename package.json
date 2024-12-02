@@ -1,6 +1,6 @@
 {
   "name": "@netbek/noto-emoji",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "module",
   "main": "index.js",
   "repository": {
